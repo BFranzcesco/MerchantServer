@@ -15,7 +15,7 @@ public class OrderController {
     @RequestMapping("/order")
     public void order() {
         NotificationService service = new NotificationService();
-        service.pushNotificationToGCM(registrationID, "One margherita please!");
+        service.pushNotificationToGCM(registrationID, "1 Pizza Margherita");
     }
 
 }
