@@ -12,7 +12,7 @@ import java.io.IOException;
 @Service
 public class NotificationService {
 
-    public static final String API_KEY = "AIzaSyC4mp3iVnqXsoKzsDItn8OTDuUUHmm53VY";
+    public static final String API_KEY = "AIzaSyBTAhRyGXTybFEwt0SVV8_N5qKdzhdudfA";
 
     public boolean pushNotificationToGCM(String registrationID, String message){
         final int retries = 3;

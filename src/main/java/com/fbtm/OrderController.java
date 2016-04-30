@@ -7,14 +7,15 @@ import org.springframework.web.bind.annotation.RestController;
 public class OrderController {
     private String registrationID;
 
-    @RequestMapping("/order")
-    public void getIndex() {
-        NotificationService service = new NotificationService();
-        service.pushNotificationToGCM(registrationID, "Hello! Pizza ready!");
-    }
-
     @RequestMapping("/register")
     public void register(String registrationID) {
         this.registrationID = registrationID;
     }
+
+    @RequestMapping("/order")
+    public void order() {
+        NotificationService service = new NotificationService();
+        service.pushNotificationToGCM(registrationID, "One margherita please!");
+    }
+
 }
